@@ -1,0 +1,624 @@
+/*
+    This part is the default style of all pages.
+    You can change freely, but notice me if you do something (แหมะๆ)
+    Change this part, every pages will change so I have to check if there are some bugs on other pages.
+*/
+article{
+    background-color: lightsteelblue;
+    margin: 10px;
+    padding: 10px;
+}
+article:hover{
+    opacity: 0.8;
+}
+
+/* About us style */
+#meAndTheBoys{
+    color: black;
+}
+
+#a1{
+    grid-area: a1;
+}
+#a2{
+    grid-area: a2;
+}
+#a3{
+    grid-area: a3;
+}
+#a4{
+    grid-area: a4;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+table, th, td {
+    border: 1px black solid;
+}
+
+thead {
+    font-size: 18px;
+}
+
+tbody {
+    font-size: 16px;
+}
+
+
+/* This is the responsive part, it have every page's style*/
+/* This is for computer or horizontal screen*/
+@media screen and (min-width: 1080px){
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 26px;
+        text-align: center;
+        background-color: cornflowerblue;
+        box-sizing: border-box;
+    }
+    
+    a{
+        color: antiquewhite;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    a:hover{
+        color: lightpink;
+    }
+    
+    header{
+        
+        color: aliceblue;
+        font-size: 50px;
+        font-weight: 700;
+    
+    }
+    
+    nav{
+        background-color: lightskyblue;
+        color: slategray;
+        text-align: right;
+        font-size: 48px;
+        font-weight: 600;
+        margin: 20px;
+    }
+    
+    footer{
+        background-color: #4c8094;
+        color: antiquewhite;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 600;
+        margin: 20px;
+    }
+    
+    #reservation{
+        display: flex;
+        justify-items: space-around;
+        align-items: center;
+    }
+
+    label {
+        font-size: 24px;
+    }
+
+    label #name{
+        width: 250px;
+    }
+
+    label #tel {
+        width: 100px;
+    }
+
+    label #email {
+        width: 250px;
+    }
+
+    label #spreq {
+        height: 100px;
+        width: 500px;
+    }
+
+    main{
+        background-color: lightsteelblue;
+        font-size: 36px;
+        margin: 20px;
+        padding: 20px;
+    
+    }
+
+    .container{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    #meAndTheBoys{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        'a1 a2 a3 a4'
+        ;
+    }
+    #meAndTheBoys img{
+        width: 297px;
+        height: 448px;
+    }
+    .loginmain{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #EFD78D;
+    }
+
+    .resultlist article{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 4fr 1fr;
+    }
+    /* Result page style*/
+    .resultlist p{
+        color: #874338;
+        font-size: 25px;
+        padding: 10px;
+        margin: 20px;
+    }
+    .resultlist h1{
+        font-size: 30px;
+        padding: 10px;
+        margin: 20px;
+    }
+
+    .buybutton{
+        font-size: 25px;
+        padding: 10px 20px;
+        color: #874338;
+        border-radius: 10px;
+        border-color: #E97E2E;
+        background-color: #E97E2E;
+    }
+    .buybutton:hover{
+        font-size: 27px;
+        padding: 12px 24px;
+        color: #874338;
+        border-radius: 10px;
+        border-color: #874338;
+        opacity: 0.8;
+    }
+    .productinfo a{
+        font-size: 25px;
+        color: #E97E2E;
+    }
+    .productinfo a:hover{
+        font-size: 30px;
+        color: lightcoral;
+    }
+
+    /* Login page's style*/
+    .loginbox, .registerwarp{
+        background-color: #E97E2E;
+        width: 600px;
+        margin: 10px;
+        padding: 50px;
+        border-radius: 60px;
+        font-size: 25px;
+    }
+    #emailinput{
+        width: 320px;
+        height: 45px;
+        margin: 10px;
+        font-size: 35px;
+    }
+    #passwordinput{
+        width: 250px;
+        height: 45px;
+        margin: 10px;
+        font-size: 35px;
+    }
+    #regisbutton{
+        width: 250px;
+        height: 80px;
+        border-radius: 30px;
+        font-size: 30px;
+        background-color: #EFD78D;
+    }
+    #regisbutton:hover{
+        opacity: 0.8;
+    }
+    #sublogin{
+        width: 200px;
+        height: 80px;
+        font-size: 33px;
+        border-radius: 30px;
+        background-color: #EFD78D;
+    }
+    #sublogin:hover{
+        opacity: 0.8;
+    }
+    /* Register page's style*/
+    .regisarea{
+        background-color: #EFD78D;
+        width: 600px;
+        margin: 20px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .regisbar{
+        height: 50px;
+        margin: 10px;
+        border-radius: 5px;
+        font-size: 32px;
+    }
+
+    #subregis{
+        width: 150px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #E97E2E;
+        font-size: 32px;
+        margin: 20px;
+    }
+    #subregis:hover{
+        opacity: 0.8;
+    }
+
+    /*balancing the register width*/
+    #reg1{
+        width: 370px;
+    }
+    #reg2{
+        width: 300px;
+    }
+    #reg3{
+        width: 360px;
+    }
+    #reg4{
+        width: 405px;
+    }
+    #reg5{
+        width: 315px;
+    }
+
+    /* Search page style */
+    .searchbar{
+        background-color: #E97E2E;
+        margin: 30px;
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+    }
+
+    #searchgo {
+        width: 180px;
+        height: 50px;
+        color:#874338;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        font-size: 35px;
+    }
+    #searchgo:hover {
+        color: #E97E2E;
+        background-color: #EFD78D;
+    }
+
+    #searchitem {
+        width: 350px;
+        height: 50px;
+        background-color: antiquewhite;
+        color: black;
+        border-radius: 10px;
+        font-size: 32px;
+    }
+
+    
+    /* style for each partner shop profile */
+    .shopinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #EFD78D;
+        font-size: 25px;
+        color: darkcyan;
+    }
+    #low_rating{
+        color: red;
+    }
+
+    /* style for profile page*/
+    .User_profile{
+        font-size: 20px;
+    }
+    .User_info{
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        font-size: 18px;
+    }
+    .User_profile a{
+        color: palevioletred;
+    }
+
+    #user_status {
+        padding-left: 30px;
+        text-align: left;
+    }
+    .smaller{
+        font-size: 15px;
+    }
+
+
+}
+/*This is for phones tablets or vertical screen*/
+@media screen and (max-width: 1080px){
+    body{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 13px;
+        text-align: center;
+        background-color: lightsteelblue;
+        box-sizing: border-box;
+    }
+    
+    a{
+        color: antiquewhite;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    a:hover{
+        color: lightpink;
+    }
+    
+    header{
+        
+        color: aliceblue;
+        font-size: 25px;
+        font-weight: 700;
+    
+    }
+    
+    nav{
+        background-color: lightskyblue;
+        color: slategray;
+        text-align: right;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 10px;
+    }
+    
+    footer{
+        background-color: #874338;
+        color: antiquewhite;
+        text-align: right;
+        font-size: 15px;
+        font-weight: 600;
+        margin: 10px;
+    }
+    
+    main{
+        background-color: lightsteelblue;
+        font-size: 18px;
+        margin: 10px;
+        padding: 10px;
+    
+    }
+
+    .container, #meAndTheBoys, .loginmain{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .container img{
+        width: 70%;
+        height: 70%;
+    }
+    #meAndTheBoys{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #meAndTheBoys img{
+        width: 70%;
+    }
+    #meAndTheBoys article{
+        padding-bottom: 70px;
+    }
+    .resultlist article{
+        display: grid;
+        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+    }
+    .loginmain{
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #EFD78D;
+    }
+
+    /* Result page style*/
+
+    .resultlist p{
+        color: #874338;
+        font-size: 15px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .resultlist h1{
+        font-size: 15px;
+        padding: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .buybutton{
+        font-size: 25px;
+        padding: 10px 20px;
+        color: #874338;
+        border-radius: 10px;
+        border-color: #E97E2E;
+        background-color: #E97E2E;
+    }
+    .buybutton:hover{
+        font-size: 27px;
+        padding: 12px 24px;
+        color: #874338;
+        border-radius: 10px;
+        border-color: #874338;
+        opacity: 0.8;
+    }
+    .productinfo a{
+        font-size: 25px;
+        color: #E97E2E;
+    }
+    .productinfo a:hover{
+        font-size: 30px;
+        color: lightcoral;
+    }
+
+
+
+    /* Login page's style*/
+    .loginbox, .registerwarp{
+        background-color: #E97E2E;
+        width: 300px;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+    #emailinput{
+        width: 160px;
+        height: 25px;
+        margin: 5px;
+        font-size: 15px;
+    }
+    #passwordinput{
+        width: 130px;
+        height: 25px;
+        margin: 5px;
+        font-size: 15px;
+    }
+    #regisbutton{
+        width: 100px;
+        height: 60px;
+        border-radius: 20px;
+        font-size: 20px;
+        background-color: #EFD78D;
+        margin-bottom: 30px;
+    }
+    #regisbutton:hover{
+        opacity: 0.8;
+    }
+    #sublogin{
+        width: 100px;
+        height: 50px;
+        font-size: 13px;
+        border-radius: 30px;
+        background-color: #EFD78D;
+    }
+    #sublogin:hover{
+        opacity: 0.8;
+    }
+    /* Register page's style*/
+    .regisarea{
+        background-color: #EFD78D;
+        width: 380px;
+        margin: 5px;
+        padding: 5px;
+        border-radius: 15px;
+    }
+
+    .regisbar{
+        height: 30px;
+        margin: 6px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    #subregis{
+        width: 150px;
+        height: 60px;
+        border-radius: 10px;
+        background-color: #E97E2E;
+        font-size: 32px;
+        margin: 20px;
+    }
+    #subregis:hover{
+        opacity: 0.8;
+    }
+
+    /*balancing the register width*/
+    #reg1{
+        width: 170px;
+    }
+    #reg2{
+        width: 140px;
+    }
+    #reg3{
+        width: 165px;
+    }
+    #reg4{
+        width: 195px;
+    }
+    #reg5{
+        width: 150px;
+    }
+
+    /* Search page style */
+    .searchbar{
+        background-color: #E97E2E;
+        margin: 30px;
+        padding: 10px;
+        display: flex;
+        justify-content: right;
+    }
+
+    #searchgo {
+        width: 100px;
+        height: 43px;
+        color:#874338;
+        background-color: antiquewhite;
+        border-radius: 10px;
+        font-size: 15px;
+    }
+    #searchgo:hover {
+        color: #E97E2E;
+        background-color: #EFD78D;
+    }
+
+    #searchitem {
+        width: 170px;
+        height: 40px;
+        background-color: antiquewhite;
+        color: black;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+    
+    /* style for each partner shop profile */
+    .shopinfo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #EFD78D;
+        font-size: 12px;
+        color: darkcyan;
+    }
+    #low_rating{
+        color: red;
+    }
+}
+
+
+
+
+
+
